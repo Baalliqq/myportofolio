@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap-5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <title>Homepage | BookStore</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top py-4 shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">Book<span>Store</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="input-group mx-auto mt-5 mt-lg-0">
+            <input type="text" class="form-control" placeholder="Mau cari buku apa hari ini" aria-label="Recipient's username" aria-describedby="button-addon2" />
+            <button class="btn btn-outline-warning" type="button" id="button-addon2">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+
+          <ul class="navbar-nav ms-auto mt-3 mt-sm-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="bx bx-heart"></i>
+              </a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="#">
+                <i class="bx bx-cart-alt"></i>
+                <span class="position-absolute badge rounded-circle text-bg-warning">2</span>
+              </a>
+            </li>
+
+            <!-- mobile dropdown -->
+            <div class="dropdown mt-3 d-lg-none">
+              <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">BestSeller</a></li>
+                <li><a class="dropdown-item" href="#">Category</a></li>
+                <li><a class="dropdown-item" href="#">Community</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+              </ul>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link btn-second mt-5 mt-lg-0 text-center" href="#">login</a>
+            </li>
+            <li class="nav-item mt-3 mt-lg-0">
+              <a class="nav-link btn-first text-center" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container menu-wrapper fixed-top d-none d-lg">
+      <div class="menu d-flex justify-content-center align-items-center">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">BestSeller</a>
+        <a class="nav-link" href="#">Category</a>
+        <a class="nav-link" href="#">Community</a>
+        <a class="nav-link" href="#">Menu</a>
+      </div>
+    </div>
+
+    <!-- carousel -->
+    <section class="header">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Hero.png" class="d-block w-100" data-bs-interval="2500" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/Hero.png" class="d-block w-100" data-bs-interval="2500" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/Hero.png" class="d-block w-100" data-bs-interval="2500" alt="..." />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Popular -->
+    <section class="populer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <h1>Populer Now</h1>
+          </div>
+          <div class="col-6 text-end">
+            <a href="#" class="btn-first">View All</a>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 col-6 mt-lg-0">
+            <div class="card card-body p-lg-4 p-3">
+              <img src="img/9786020639512_selena_cov__w149_hauto 2.png" class="img-fluid" alt="" />
+              <h3 class="title mt-3">Selena</h3>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <p class="autors m-0 mt-3">Tere liye</p>
+              <div>
+                <a href="#" class="badge text-bg-primary">Novel</a>
+              </div>
+
+              <div class="detail d-flex justify-content-between align-items-center mt-4">
+                <p class="price m-0">Rp 100.000</p>
+                <a href="#" class="btn-cart">
+                  <i class="bx bx-cart-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg-3 col-6 mt-lg-0">
+            <div class="card card-body p-lg-4 p-3">
+              <img src="img/1 1 (1).png" class="img-fluid" alt="" />
+              <h3 class="title mt-3">Start With You</h3>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <p class="autors m-0 mt-3">Tere liye</p>
+              <div>
+                <a href="#" class="badge text-bg-primary">Novel</a>
+              </div>
+
+              <div class="detail d-flex justify-content-between align-items-center mt-4">
+                <p class="price m-0">Rp 100.000</p>
+                <a href="#" class="btn-cart">
+                  <i class="bx bx-cart-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-lg-0">
+            <div class="card card-body p-lg-4 p-3">
+              <img src="img/51Bz60iDotL 1.png" class="img-fluid" alt="" />
+              <h3 class="title mt-3">The Comppound Effect</h3>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <p class="autors m-0 mt-3">Tere liye</p>
+              <div>
+                <a href="#" class="badge text-bg-primary">Novel</a>
+              </div>
+
+              <div class="detail d-flex justify-content-between align-items-center mt-4">
+                <p class="price m-0">Rp 100.000</p>
+                <a href="#" class="btn-cart">
+                  <i class="bx bx-cart-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-lg-0">
+            <div class="card card-body p-lg-4 p-3">
+              <img src="img/71SL3cv04yL.png" class="img-fluid" alt="" />
+              <h3 class="title mt-3">Building a story Brand</h3>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <p class="autors m-0 mt-3">Tere liye</p>
+              <div>
+                <a href="#" class="badge text-bg-primary">Novel</a>
+              </div>
+
+              <div class="detail d-flex justify-content-between align-items-center mt-4">
+                <p class="price m-0">Rp 100.000</p>
+                <a href="#" class="btn-cart">
+                  <i class="bx bx-cart-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+    <!-- popular ke 2 -->
+    <section class="populer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <h1>Lates Books</h1>
+          </div>
+          <div class="col-6 text-end">
+            <a href="#" class="btn-first">View All</a>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 col-6 mt-lg-0">
+            <div class="card card-body p-lg-4 p-3">
+              <img src="img/BLK_CI2020227283.png" class="img-fluid" alt="" />
+              <h3 class="title mt-3">Crushing IT</h3>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <p class="autors m-0 mt-3">Tere liye</p>
+              <div>
+                <a href="#" class="badge text-bg-primary">Novel</a>
+              </div>
+
+              <div class="detail d-flex justify-content-between align-items-center mt-4">
+                <p class="price m-0">Rp 100.000</p>
+                <a href="#" class="btn-cart">
+                  <i class="bx bx-cart-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg-3 col-6 mt-lg-0">
+            <div class="card card-body p-lg-4 p-3">
+              <img src="img/ID_GPU2017MTH06BINT_S 1.png" class="img-fluid" alt="" />
+              <h3 class="title mt-3">Binatang</h3>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <p class="autors m-0 mt-3">Tere liye</p>
+              <div>
+                <a href="#" class="badge text-bg-primary">Novel</a>
+              </div>
+
+              <div class="detail d-flex justify-content-between align-items-center mt-4">
+                <p class="price m-0">Rp 100.000</p>
+                <a href="#" class="btn-cart">
+                  <i class="bx bx-cart-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-lg-0">
+            <div class="card card-body p-lg-4 p-3">
+              <img src="img/images (1) 1.png" class="img-fluid" alt="" />
+              <h3 class="title mt-3">Habits
+                
+              </h3>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <p class="autors m-0 mt-3">Tere liye</p>
+              <div>
+                <a href="#" class="badge text-bg-primary">Novel</a>
+              </div>
+
+              <div class="detail d-flex justify-content-between align-items-center mt-4">
+                <p class="price m-0">Rp 100.000</p>
+                <a href="#" class="btn-cart">
+                  <i class="bx bx-cart-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-lg-0">
+            <div class="card card-body p-lg-4 p-3">
+              <img src="img/se-indonesia_ebook_original_eng_-_atomic_habits-_an_easy_-_proven_way_to_build_good_habits_-_break_bad_ones_full01_qbmu3a1m (1).png" class="img-fluid" alt="" />
+              <h3 class="title mt-3">Atomic Habits</h3>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+              <p class="autors m-0 mt-3">Tere liye</p>
+              <div>
+                <a href="#" class="badge text-bg-primary">Novel</a>
+              </div>
+
+              <div class="detail d-flex justify-content-between align-items-center mt-4">
+                <p class="price m-0">Rp 100.000</p>
+                <a href="#" class="btn-cart">
+                  <i class="bx bx-cart-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Subscribes -->
+      <section class="subscribe">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-7 col-10 col-sub">
+              <h1>Recommended books from you to review</h1>
+              <form action="#" class="m-5t" id="">
+                <div class="input-group w-100">
+                  <input type="email" class="form-control" placeholder="Type your email">
+                  <button class="btn btn-outline-warning">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- testimoni -->
+      <section class="testi">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 text-center">
+              <div class="card px-4 py-5">
+                <img src="img/profilprodi.png" class="img-fluid rounded-circle" width="70" alt="Iqbal">
+                <i class='bx bxs-quote-alt-right'></i>
+                <p class="name fw-bold">Iqbal Bachtiar</p>
+                <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aspernatur.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 text-center">
+              <div class="card px-4 py-5">
+                <img src="img/profilprodi.png" class="img-fluid rounded-circle" width="70" alt="Iqbal">
+                <i class='bx bxs-quote-alt-right'></i>
+                <p class="name fw-bold">Iqbal Bachtiar</p>
+                <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aspernatur.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 text-center">
+              <div class="card px-4 py-5">
+                <img src="img/profilprodi.png" class="img-fluid rounded-circle" width="70" alt="Iqbal">
+                <i class='bx bxs-quote-alt-right'></i>
+                <p class="name fw-bold">Iqbal Bachtiar</p>
+                <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aspernatur.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 text-center">
+              <div class="card px-4 py-5">
+                <img src="img/profilprodi.png" class="img-fluid rounded-circle" width="70" alt="Iqbal">
+                <i class='bx bxs-quote-alt-right'></i>
+                <p class="name fw-bold">Iqbal Bachtiar</p>
+                <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aspernatur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- footer -->
+      <footer>
+        <div class="container pt-5">
+          <div class="row row-content">
+            <div class="col-md-6">
+              <h1 class="logo-brand">Book<span>Store</span></h1>
+              <p>is the best place to review a book</p>
+            </div>
+            <div class="col-md-3 mt-4 mt-sm-0">
+              <h3>Navigation</h3>
+              <ul class="p-0">
+                <li><a href="#" class="text-dark">Home</a></li>
+                <li class="mt-3"><a href="#" class="text-dark" >Best Seller</a></li> 
+                <li class="mt-3"><a href="#" class="text-dark">Categoory</a></li>
+                <li class="mt-3"><a href="#" class="text-dark">Community</a></li> 
+                <li class="mt-3"><a href="#" class="text-dark">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 mt-4 mt-ms-0">
+              <h3 class="mb-3">Company</h3>
+              <a href="#">iqbalbachtiar144@gmail.com</a>
+              <p>Jln Kenanga No.2 Cilacap</p>
+            </div>
+            <div class="row row-copy mt-4 mt-sm-0">
+              <div class="col-md-6">
+                <p>&copy;2022 ReviewBook. All Right Reversed.</p>
+              </div>
+              <div class="col-md-6 text-sm-end">
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
